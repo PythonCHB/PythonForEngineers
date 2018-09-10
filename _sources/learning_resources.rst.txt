@@ -37,3 +37,9 @@ and the source:
 https://github.com/UWPCE-PythonCert/PythonCertDevel
 
 
+Unidate Python Workshop
+-----------------------
+
+A training designed for ocean and atmosperic science -- but useful for anyone.
+
+https://unidata.github.io/unidata-python-workshop/

@@ -7,15 +7,14 @@ Welcome to Python for Engineers
 ===============================
 
 
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    installing
+   getting_started
    scipy_stack
    learning_resources
-
 
 
 Indices and tables

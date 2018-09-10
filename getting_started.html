@@ -1,0 +1,207 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Getting Started &#8212; Python for Engineers 1.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="The SciPy Stack" href="scipy_stack.html" />
+    <link rel="prev" title="Installing" href="installing.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="getting-started">
+<span id="id1"></span><h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>One of the tricky things with Python is getting started.</p>
+<p>There are many pieces that must come together in order to get anything done, including:</p>
+<ul class="simple">
+<li>Getting Python and the libraries you need installed</li>
+<li>Figuring out how to edit and run your code</li>
+<li>Figuring out how to manage your own collection of code</li>
+</ul>
+<p>And all that has nothing to do with the Python Language or libraries. For that you need:</p>
+<ul class="simple">
+<li>A basic understanding of the language</li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li>defining variables</li>
+<li>how types work in Python</li>
+<li>basic logical constructs:<ul>
+<li>looping</li>
+<li>if/then</li>
+</ul>
+</li>
+<li>Defining functions</li>
+</ul>
+</div></blockquote>
+<div class="section" id="installing">
+<h2>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h2>
+<p>The first step is getting everything installed. Try this page for some tips: <a class="reference internal" href="installing.html#installing"><span class="std std-ref">Installing</span></a></p>
+<p>For the rest of this document, I’m going to assume that you have Python, iPython, Jupyter, and a programmers text editor all installed and working.</p>
+</div>
+<div class="section" id="how-to-run-python-code">
+<h2>How to run Python Code<a class="headerlink" href="#how-to-run-python-code" title="Permalink to this headline">¶</a></h2>
+<p>There are a number of ways to run Python code – here is a brief introduction:</p>
+<div class="section" id="ipython">
+<h3>iPython<a class="headerlink" href="#ipython" title="Permalink to this headline">¶</a></h3>
+<p>iPython is an “enhanced” interactive interpreter (REPL) for Python. It provides some very nice features that make it easy to experiment with little snippets of code.</p>
+<p><a class="reference external" href="https://uwpce-pythoncert.github.io/PythonCertDevel/modules/IPythonIntroduction.html">iPython introduction</a></p>
+</div>
+<div class="section" id="running-a-python-script">
+<h3>Running a python script<a class="headerlink" href="#running-a-python-script" title="Permalink to this headline">¶</a></h3>
+<p>Once you get beyond experimentation, you’ll want to put your code in a file so you can use ot over and over again, rather than retyping things in iPython.</p>
+<p>A file with python code in it is a ‘module’ or ‘script’</p>
+<p>(more on the distinction later on…)</p>
+<p>It should be named with the <code class="docutils literal notranslate"><span class="pre">.py</span></code> extension: <code class="docutils literal notranslate"><span class="pre">some_name.py</span></code></p>
+<p>If you want to run the code directly (it is a script), you have a couple options:</p>
+<ol class="arabic simple">
+<li>call python on the command line, and pass in your module name</li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python3 the_name_of_the_script.py
+</pre></div>
+</div>
+<ol class="arabic" start="2">
+<li><p class="first">On *nix (linux, OS-X, Windows bash), you can make the file “executable”:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ chmod +x the_file.py
+</pre></div>
+</div>
+<p>And make sure it has a “shebang” line at the top:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+</pre></div>
+</div>
+<p>Then you can run it directly:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">the_file</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">On Windows, the <cite>.py</cite> extensions can be associated with the python interpreter, so it can be run directly. This is clunkier than the *nix “shebang line” approach, so I don’t recommend it – but it is an option.</p>
+</li>
+<li><p class="first">run <code class="docutils literal notranslate"><span class="pre">ipython</span></code>, and run it from within iPython with the <code class="docutils literal notranslate"><span class="pre">run</span></code> command</p>
+</li>
+</ol>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">run</span> <span class="n">the_file</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li>Various IDEs (PyCharm, IDLE, etc) have a way to run the module you are currently editing – if you use one of these tools, learn how to do that. Make sure that it is using the version of Python that you want it to be.</li>
+</ol>
+</div>
+<div class="section" id="jupyter-notebooks">
+<h3>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">¶</a></h3>
+<p>A Jupyter Notebook (<a class="reference external" href="http://jupyter.org/">http://jupyter.org/</a>) is a browser-based system that allows you to intermix Python (and other languages) code and documentation, and graphical output in one place. Being browser based, notebooks can be run on your own system, or published on the web for others to see and use.</p>
+<p>Notebooks are an excelent tool for interactive data analysis and learning and experimenting with python.</p>
+<p>There ae many tutorials on the web – here is just one:</p>
+<p><a class="reference external" href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">https://www.dataquest.io/blog/jupyter-notebook-tutorial/</a></p>
+</div>
+</div>
+<div class="section" id="basic-python-constructs">
+<h2>Basic Python Constructs<a class="headerlink" href="#basic-python-constructs" title="Permalink to this headline">¶</a></h2>
+<p>There are many tutorials on the internet to get started. Here is a brief overview:</p>
+<p><a class="reference external" href="https://uwpce-pythoncert.github.io/PythonCertDevel/modules/BasicPython.html">https://uwpce-pythoncert.github.io/PythonCertDevel/modules/BasicPython.html</a></p>
+<p>And here is more on function definitions:</p>
+<p><a class="reference external" href="https://uwpce-pythoncert.github.io/PythonCertDevel/modules/Functions.html">https://uwpce-pythoncert.github.io/PythonCertDevel/modules/Functions.html</a></p>
+<p>“dictionaries” are a very useful built-in Python data structure:</p>
+<p><a class="reference external" href="https://uwpce-pythoncert.github.io/PythonCertDevel/modules/DictsAndSets.html">https://uwpce-pythoncert.github.io/PythonCertDevel/modules/DictsAndSets.html</a></p>
+</div>
+<div class="section" id="how-to-manage-your-own-code">
+<h2>How to manage your own Code<a class="headerlink" href="#how-to-manage-your-own-code" title="Permalink to this headline">¶</a></h2>
+<p>Once you start doing something useful with Python, you will likely find that you have a small collection of code that you want to be able to re-use in multiple projects.</p>
+<p><strong>Do not copy and paste that code all over the place</strong></p>
+<p>Try this instead:</p>
+<p><a class="reference external" href="http://pythonchb.github.io/PythonTopics/where_to_put_your_code.html">Where to put your custom code</a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Getting Started</a><ul>
+<li><a class="reference internal" href="#installing">Installing</a></li>
+<li><a class="reference internal" href="#how-to-run-python-code">How to run Python Code</a><ul>
+<li><a class="reference internal" href="#ipython">iPython</a></li>
+<li><a class="reference internal" href="#running-a-python-script">Running a python script</a></li>
+<li><a class="reference internal" href="#jupyter-notebooks">Jupyter Notebooks</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#basic-python-constructs">Basic Python Constructs</a></li>
+<li><a class="reference internal" href="#how-to-manage-your-own-code">How to manage your own Code</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="installing.html" title="previous chapter">Installing</a></li>
+      <li>Next: <a href="scipy_stack.html" title="next chapter">The SciPy Stack</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/getting_started.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Christopher H.Barker.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/getting_started.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
