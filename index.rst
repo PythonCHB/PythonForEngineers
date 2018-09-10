@@ -12,6 +12,10 @@ Welcome to Python for Engineers
    :maxdepth: 2
    :caption: Contents:
 
+   installing
+   scipy_stack
+   learning_resources
+
 
 
 Indices and tables
