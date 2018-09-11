@@ -6,10 +6,18 @@
 Welcome to Python for Engineers
 ===============================
 
+This is a very short collection of references to help engineers and scientists get started with Python. It was quickly put together for a brief lecture to undergraduate engineerign students, so not very well filled out -- but I hope it is useful.
+
+These pages were built from source in `this gitHub project <https://github.com/PythonCHB/PythonForEngineers>`_ Please feel free to use `Issues <https://help.github.com/articles/about-issues/>`_ in that project to ask questions, make suggestions, or even submit corrections or additional material via `Pull Requests. <https://help.github.com/articles/about-pull-requests/>`_
+
+..    :caption: Contents:
+
+
+Contents
+--------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    installing
    getting_started
