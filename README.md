@@ -10,7 +10,9 @@ A published version is available on github.io here:
 
 https://PythonCHB.github.io/PythonForEngineers/
 
-(broken right now -- sorry :-( )
+## Contibuting
+
+If you find mistakes, or have suggestins for additional content, please feel free to post an issue or pull request to this repo.
 
 
 
