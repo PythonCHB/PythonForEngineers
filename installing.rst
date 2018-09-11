@@ -4,6 +4,12 @@
 Installing
 ==========
 
+TL;DR
+-----
+
+Install Anaconda from https://www.anaconda.com/distribution/
+
+
 python.org
 ----------
 
@@ -39,6 +45,10 @@ https://www.anaconda.com/distribution/
 In addition, conda provides isolated "environments", which allow you to have different versions of software for different projects.
 
 "Anaconda" is a full-featured distribution of Python and many conda packages required for scientific computing. It is a large install, but makes it easy to get started with everything you are likely to need all at once. As it is based on the conda system, it can be extended and used in the same way as your needs grow.
+
+Many people recommend Anaconda for folks new to Python that want to use it for Engineering / Science / Data Analysis.
+
+
 
 
 
