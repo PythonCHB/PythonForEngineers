@@ -14,6 +14,7 @@ https://PythonCHB.github.io/PythonForEngineers/
 
 If you find mistakes, or have suggestins for additional content, please feel free to post an issue or pull request to this repo.
 
+**NOTE:** Make sure to do your PR against the master branch, not this branch (gh-pages) -- the actual source is in master, the gh-pages branch is for publishing the generated HTML pages.
 
 
 
