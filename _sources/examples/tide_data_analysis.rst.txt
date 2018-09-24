@@ -62,10 +62,16 @@ Reading the measured data
 
 Reading the measured data is much easier -- it is a nicely formatted CSV file.
 
-In fact, the `Pandas data analysis library <https://pandas.pydata.org/>`_
-has a CSV File reader that can read it out of the box.
-
 So we can immediately work with the data in a Jupyter Notebook.
+
+Here is an example to get you started:
+
+:download:`Jupyter Notebook for tide data <data_and_code/read_and_plot_tide_data.ipynb>`
+
+and one we put together in as. group in a class:
+
+:download:`Jupyter Notebook for tide data -- class version <data_and_code/tide_data_in_class.ipynb>`
+
 
 
 
