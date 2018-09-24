@@ -18,7 +18,7 @@ So we will use Python to parse the file into a nicer format.
 # https://docs.python.org/3/library/csv.html
 import csv
 
-import datetime
+from datetime import datetime
 
 
 def parse_row(row):
@@ -74,7 +74,7 @@ def parse_row(row):
         height = float(height.split()[0])
 
         # make a datetime object
-        dt = datetime.datetime(year, month, day, hour, minute)
+        dt = datetime(year, month, day, hour, minute)
 
         # add them to the lists of data
         times.append(dt)
