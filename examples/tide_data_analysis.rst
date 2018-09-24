@@ -45,9 +45,30 @@ This data is designed to make a nice table for people to read, so is a bit
 
 Take a look at that now:
 
-Tidal Predictions as a CSV file: :download:`read_tide_data.py <data_and_code/read_tide_data.py>
+:download:`read_tide_data.py <data_and_code/read_tide_data.py>`
 
 That file is a python "module" -- it can be run as a script by itself, or "imported" into other python code, and the functions defined in it will be available to use.
+
+You can run it on the command line with::
+
+  python3 read_tide_data.py
+
+Or in `iPython` with::
+
+  run read_tide_data.py
+
+Reading the measured data
+-------------------------
+
+Reading the measured data is much easier -- it is a nicely formatted CSV file.
+
+In fact, the `Pandas data analysis library <https://pandas.pydata.org/>`_
+has a CSV File reader that can read it out of the box.
+
+So we can immediately work with the data in a Jupyter Notebook.
+
+
+
 
 
 
