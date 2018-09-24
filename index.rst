@@ -23,7 +23,7 @@ Contents
    getting_started
    scipy_stack
    learning_resources
-
+   examples/tide_data_analysis
 
 .. Indices and tables
 .. ==================
